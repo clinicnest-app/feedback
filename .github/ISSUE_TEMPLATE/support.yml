@@ -1,0 +1,25 @@
+name: Support question
+description: How do I … ? Installing, updating, backups, moving to another computer
+title: "Question: "
+labels: ["support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Everything written here is public.** Do not include patient names, phone numbers, patient IDs or screenshots that show a patient. Use made-up data, or write to support@clinicnest.app instead.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: ClinicNest version
+      description: Settings → About, for example 1.0.6 (leave empty if it is not installed yet)
+  - type: dropdown
+    id: system
+    attributes:
+      label: Computer that runs ClinicNest
+      options: [Windows, Mac, Linux / server, Not installed yet, Not sure]

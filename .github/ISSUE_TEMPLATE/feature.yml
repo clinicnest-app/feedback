@@ -1,0 +1,31 @@
+name: Feature request
+description: Something ClinicNest should do, or do differently
+title: "Request: "
+labels: ["feature request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Everything written here is public.** Do not include patient names, phone numbers, patient IDs or screenshots that show a patient. Use made-up data, or write to support@clinicnest.app instead.
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to do?
+      description: Describe the situation in the clinic – what you are trying to get done.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do it today?
+      description: On paper, in another program, with a workaround in ClinicNest …
+  - type: dropdown
+    id: specialty
+    attributes:
+      label: Kind of clinic
+      options: [General practice, Eye, ENT, Other specialty, Hospital outpatient department]
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How important is it for you?
+      options: [Cannot use ClinicNest without it, Would save time every day, Nice to have]

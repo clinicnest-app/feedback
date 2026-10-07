@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Write an email instead
+    url: mailto:support@clinicnest.app
+    about: For anything that contains clinic or patient details, or if you prefer email.
+  - name: Download ClinicNest
+    url: https://updates.clinicnest.app/
+    about: The latest installer for Windows and Mac.
